@@ -2,14 +2,14 @@
 
 | ID    | Title | Score | Status | # of Dependencies |
 |-------|-------|-------|--------|-------------------|
-| ST-01 | Create scoreboard objectives for each aura category | 3 | Not Started | 0 |
-| ST-02 | Implement basic commands for aura manipulation | 2 | Not Started | 1 |
-| ST-03 | Create player join initialization | 2 | Not Started | 1 |
-| ST-04 | Add aura bounds checking (0-100) | 1 | Not Started | 1 |
+| ST-01 | Create scoreboard objectives for each aura category | 3 | Completed | 0 |
+| ST-02 | Implement basic commands for aura manipulation | 2 | Completed | 1 |
+| ST-03 | Create player join initialization | 2 | Completed | 1 |
+| ST-04 | Add aura bounds checking (0-100) | 1 | Completed | 1 |
 | ST-05 | Design command book layout | 2 | Not Started | 0 |
 | ST-06 | Implement clickable book actions | 2 | Not Started | 5 |
-| ST-07 | Create book distribution system | 1 | Not Started | 5 |
-| ST-08 | Implement passive decay timer (60s) | 3 | Not Started | 1 |
+| ST-07 | Create book distribution system | 1 | In Progress | 5 |
+| ST-08 | Implement passive decay timer (60s) | 3 | In Progress | 1 |
 | ST-09 | Add time advance functionality | 2 | Not Started | 2 |
 | ST-10 | Create decay rate configuration | 1 | Not Started | 1 |
 | ST-11 | Implement status effect system | 3 | Not Started | 1 |

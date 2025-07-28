@@ -2,7 +2,7 @@
 
 | ID   | Title | Score | # of Subtasks | Status | Description |
 |------|-------|-------|---------------|--------|-------------|
-| T-01 | Core Aura System | 8 | 4 | Not Started | Implement the core aura tracking system with scoreboards and basic commands |
+| T-01 | Core Aura System | 8 | 4 | Completed | Implement the core aura tracking system with scoreboards and basic commands |
 | T-02 | Command Book UI | 5 | 3 | Not Started | Create the command book interface for task logging and aura management |
 | T-03 | Decay System | 6 | 3 | Not Started | Implement the time-based decay mechanics for aura scores |
 | T-04 | Aura Effects | 7 | 6 | Not Started | Implement all aura-based effects and status modifications |
