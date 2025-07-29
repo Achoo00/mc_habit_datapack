@@ -8,6 +8,9 @@ scoreboard objectives add pd_intelligence dummy "Intelligence"
 scoreboard objectives add pd_creativity dummy "Creativity"
 scoreboard objectives add pd_organization dummy "Organization"
 scoreboard objectives add pd_social dummy "Social"
+
+# --- Give the player the Command Book ---
+function productivity_decay:book/init
 scoreboard objectives add pd_productivity dummy "Productivity"
 
 # --- Step 2: Command & Constant Setup ---

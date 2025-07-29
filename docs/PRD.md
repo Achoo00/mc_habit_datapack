@@ -106,6 +106,57 @@ Aura values range 0-100. Effects scale across tiers (example: 0-50 = Debuff, 51-
 * Story-driven progression
 * Stats export/logging for reflection
 
+## Testing Commands
+
+### Core Aura Commands
+```mcfunction
+# Reset the entire system
+/function productivity_decay:reset_system
+
+# Set a specific aura value (format: 1OOVVV)
+# Where: 1=Health, 2=Intelligence, 3=Creativity, 4=Organization, 5=Social, 6=Productivity
+#        OO=01 for set, 02 for add, 03 for remove
+#        VVV=Value (0-100)
+/trigger pd_aura_cmd set 11080   # Set Health to 80
+/trigger pd_aura_cmd set 12020   # Add 20 to Health
+/trigger pd_aura_cmd set 13030   # Remove 30 from Health
+
+# View all aura scores
+/scoreboard objectives setdisplay list pd_health
+
+# Debug current scores
+/function productivity_decay:debug_scores
+```
+
+### Development Commands
+```mcfunction
+# Reload datapack after making changes
+/reload
+
+# Test the trigger system directly
+/function productivity_decay:test_trigger_direct
+
+# Enable trigger for testing (if needed)
+/scoreboard players enable @s pd_aura_cmd
+```
+
+### Example Test Scenarios
+```mcfunction
+# Test bounds checking (should clamp to 100)
+/trigger pd_aura_cmd set 110150
+
+# Test negative values (should clamp to 0)
+/trigger pd_aura_cmd set 130200
+
+# Test all categories
+/trigger pd_aura_cmd set 11050   # Health
+/trigger pd_aura_cmd set 22050   # Intelligence
+/trigger pd_aura_cmd set 33050   # Creativity
+/trigger pd_aura_cmd set 44050   # Organization
+/trigger pd_aura_cmd set 55050   # Social
+/trigger pd_aura_cmd set 66050   # Productivity
+```
+
 ---
 
 **Status:** In Development
